@@ -10,9 +10,9 @@
 #}
 
 main: 
-    la $a0, earray
-    addi $a1, $zero, 5
-    addi $a2, $zero, 1
+    la $a0, earray      #A[]
+    addi $a1, $zero, 5  #b = 5
+    addi $a2, $zero, 1  #c = 1
     j	        f2c				# jump to f2c save pointer here in $ra
     
 f2c:
