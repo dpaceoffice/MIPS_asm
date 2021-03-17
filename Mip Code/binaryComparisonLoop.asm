@@ -1,5 +1,5 @@
 	.data
-    earray: .word 0
+    earray: .space 5
     .text
 
 #int fun(int[] A, int b, int c) {
