@@ -5,14 +5,14 @@ main:
     # $s1 - n
     # $s2 - answer
     
-    la $a0, prompt1 # Get the multiplicand
+    la $a0, prompt1 # Get the value of n
     jal PromptInt
     move $s1, $v0
     
     move $a1, $s1 #The value of n entered
     li $v0, 1     #The initial value for F(n)
 
-    jal Factorial # Do multiplication
+    jal Factorial # Do factorial
     move $s2, $v0
     
     la $a0, result #Print the answer
